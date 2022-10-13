@@ -1,0 +1,35 @@
+.hero_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.hero_content{
+    padding: 40px;
+}
+.hero_content, .hero_img{
+    width: 50%;
+}
+
+.hero_content h2{
+    font-size: 3rem;
+    line-height: 65px;
+}
+.hero_content p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+.highlight{
+    color: var(--primary-color);
+}
+
+.hero_btn{
+    margin-top: 40px;
+}
+.primary_btn{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--btn-primary-bg);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}

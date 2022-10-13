@@ -1,0 +1,25 @@
+.newsletter{
+    background: var(--newsletter-bg);
+}
+.newsletter_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newsletter_content, .newsletter_form{
+    width: 50%;
+}
+.newsletter_form input{
+    padding: 0.7rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.newsletter_form{
+    padding: 0.4rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
