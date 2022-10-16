@@ -81,7 +81,7 @@ const Footer = () => {
                         <ul className='quick-links'>
                             {
                                 quickLinks3.map((item, index) => (
-                                    <li className='quick-links-item'><a href={item.path}>{item.display}</a></li>
+                                    <li className='quick-links-item' key={index}><a href={item.path}>{item.display}</a></li>
                                 ))
                             }
                         </ul>

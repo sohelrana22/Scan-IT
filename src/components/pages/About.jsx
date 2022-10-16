@@ -1,6 +1,8 @@
 import React from 'react';
 import './../styles/About.css';
 import aboutImg from './../../images/about-us.jpg';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const chooseData = [
     {
@@ -22,7 +24,9 @@ const chooseData = [
 
 const About = () => {
     return (
-        <section id='about'>
+        <div>
+            <Header />
+            <section id='about'>
             <div className='container'>
                 <div className='about_wrapper'>
                     <div className='about_content'>
@@ -33,8 +37,8 @@ const About = () => {
                         <div className='choose_item-wrapper'>
                             {
                                 chooseData.map((item, index) =>(
-                                    <div className="choose_us_item">
-                            <span className="choose_us_icon"><i class={item.icon}></i></span>
+                                    <div className="choose_us_item" key={index}>
+                            <span className="choose_us_icon"><i className={item.icon}></i></span>
                            <div>
                                 <h4 className="choose_us_title">{item.title}</h4>
                                 <p className='description'>{item.dec}</p>
@@ -50,6 +54,8 @@ const About = () => {
                 </div>
             </div>
         </section>
+        <Footer />
+        </div>
     );
 };
 

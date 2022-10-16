@@ -1,27 +1,31 @@
-
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+
+import Home from "./components/Home/Home";
 import About from './components/pages/About';
+import Chat from "./components/pages/Chat";
 import Contact from './components/pages/Contact';
-import Hero from './components/pages/Hero';
-import Newsletter from './components/pages/Newsletter';
-import Service from './components/pages/Service';
-import Team from './components/pages/Team';
-import Testimonial from './components/pages/Testimonial';
+import Product from "./components/pages/Product";
+import Technology from './components/pages/Technology';
+
 
 function App() {
   return (
     <div>
-     <Header />
-     <Hero />
-     <Service />
-     <Contact />
-     <About />
-     <Team />
-     <Testimonial />
-     <Newsletter />
-     <Footer />
+      <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/technology" element={ <Technology /> } />
+      <Route path="/product" element={ <Product /> } />
+      <Route path="/contact" element={ <Contact /> } />
+      <Route path="/about" element={ <About /> } />
+      <Route path="/chat" element={ <Chat /> } />
+    </Routes>
+    </BrowserRouter>
     </div>
   );
 }

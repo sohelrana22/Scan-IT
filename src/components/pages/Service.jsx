@@ -41,9 +41,9 @@ const Service = () => {
                 {
                     serviceData.map((item, index) => (
                         <Jello>
-                        <div className='services_item'>
+                        <div className='services_item' key={index}>
                     <span className='service_icon'>
-                    <i class={item.icon}></i>
+                    <i className={item.icon}></i>
                     </span>
                     <h3 className='service_title'>{item.title}</h3>
                     <p className='description'>{item.dec}</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import Swing from 'react-reveal/Swing';
+import { Link } from 'react-router-dom';
 
 const nav_links = [
     {
@@ -39,17 +40,17 @@ const Header = () => {
                         <ul  className='menu'>
                             {
                                 nav_links.map((item, index) => (
-                                    <li className='menu_item'>
-                                        <a href={item.path} className='menu_link'>
+                                    <li className='menu_item' key={index}>
+                                        <Link to={item.path} className='menu_link'>
                                             {item.display}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))
                             }
                         </ul>
                     </div>
                     <div className='light_mode'>
-                        <span><i class="ri-sun-line"></i> Light Mode</span>
+                        <span><i className="ri-sun-line"></i> Light Mode</span>
                     </div>
                 </div>
                 </Swing>

@@ -39,7 +39,7 @@ const Team = () => {
                 <div className='team_wrapper'>
                     {
                         teamMembers.map((item, index) => (
-                            <div className="team_item">
+                            <div className="team_item" key={index}>
                         <div className='team_img'>
                             <img src={item.imgURL} alt="" />
                         </div>
@@ -47,8 +47,8 @@ const Team = () => {
                             <h4>{item.name}</h4>
                             <p className='description'>{item.position}</p>
                             <div className='team_member_social'>
-                                <span><i class="ri-linkedin-line"></i></span>
-                                <span><i class="ri-facebook-line"></i></span>
+                                <span><i className="ri-linkedin-line"></i></span>
+                                <span><i className="ri-facebook-line"></i></span>
                             </div>
                         </div>
                     </div>
