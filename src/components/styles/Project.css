@@ -1,0 +1,36 @@
+.project_top-content{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.project_item{
+    padding: 30px 25px;
+    background: var(--counter-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.project_item h3{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.project_img{
+    margin-bottom: 30px;
+}
+.project_img img{
+    width: 100%;
+}
+.project_desc{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.learn_more i{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+.project_wrapper{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 30px;
+}

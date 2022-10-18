@@ -7,6 +7,8 @@ import './App.css';
 
 import Home from "./components/Home/Home";
 import About from './components/pages/About';
+import Career from "./components/pages/Career";
+import CareerDetail from "./components/pages/CareerDetail";
 import Chat from "./components/pages/Chat";
 import Contact from './components/pages/Contact';
 import Product from "./components/pages/Product";
@@ -24,6 +26,8 @@ function App() {
       <Route path="/contact" element={ <Contact /> } />
       <Route path="/about" element={ <About /> } />
       <Route path="/chat" element={ <Chat /> } />
+      <Route path="/career" element={ <Career /> } />
+      <Route path="/careerdetail" element={ <CareerDetail /> } />
     </Routes>
     </BrowserRouter>
     </div>

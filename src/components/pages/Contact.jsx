@@ -175,7 +175,7 @@ const ContactUs = () => {
                                                 InputProps={{
                                                     endAdornment: (
                                                         <InputAdornment position="end">
-                                                            <i className="fa-solid fa-user"></i>
+                                 <i className="ri-user-fill"></i>
                                                         </InputAdornment>
                                                     )
                                                 }}
@@ -194,7 +194,7 @@ const ContactUs = () => {
                                                 InputProps={{
                                                     endAdornment: (
                                                         <InputAdornment position="end">
-                                                            <i className="fa-solid fa-envelope"></i>
+                                 <i className="ri-mail-fill"></i>
                                                         </InputAdornment>
                                                     )
                                                 }}
@@ -211,7 +211,7 @@ const ContactUs = () => {
                                                 InputProps={{
                                                     endAdornment: (
                                                         <InputAdornment position="end">
-                                                            <i className="fa-solid fa-phone"></i>
+                                <i className="ri-phone-fill"></i>
                                                         </InputAdornment>
                                                     )
                                                 }}
@@ -228,7 +228,7 @@ const ContactUs = () => {
                                                 InputProps={{
                                                     endAdornment: (
                                                         <InputAdornment position="end">
-                                                            <i className="fa-solid fa-file-lines"></i>
+                          <i className="ri-profile-line"></i>
                                                         </InputAdornment>
                                                     )
                                                 }}

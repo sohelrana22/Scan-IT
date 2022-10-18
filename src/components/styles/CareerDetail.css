@@ -1,0 +1,32 @@
+.careerDetail_body{
+    margin-top: 30px;
+    padding: 30px 25px;
+    background: var(--newsletter-bg);
+    border-radius: 0.5rem;
+}
+.careerDetail_item h3{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.careerDetail_item h5{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.career_detail h4{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.careerDetail h1{
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 30px;
+    margin-top: 50px;
+}
