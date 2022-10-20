@@ -7,8 +7,6 @@ import './../styles/Contact.css';
 import { styled } from '@mui/material/styles';
 import InputTextField from './../StyledComponent/InputTextField/InputTextField';
 import swal from 'sweetalert';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 
 
 
@@ -52,7 +50,6 @@ const ContactUs = () => {
     };
     return (
         <>
-        <Header />
             {/* Contact Information Section */}
 
             <Container className='paddingY90' sx={{paddingTop: '50px' }}>
@@ -259,7 +256,6 @@ const ContactUs = () => {
                     </Box>
                 </Container>
             </Box>
-            <Footer />
         </>
     );
 };

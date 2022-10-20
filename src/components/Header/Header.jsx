@@ -33,7 +33,7 @@ const Header = () => {
             <Swing>
                 <div className='nav_wrapper'>
                     <div className='logo'>
-                        <h2>ScaN iT</h2>
+                        <h2>Scan IT</h2>
                        
                     </div>
                     <div className='navigation'>

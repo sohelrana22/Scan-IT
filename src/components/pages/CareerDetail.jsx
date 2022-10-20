@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import "./../styles/CareerDetail.css";
 import { styled } from "@mui/material/styles";
 import { Grid, InputAdornment } from "@mui/material";
@@ -28,7 +26,6 @@ const ContactButton = styled(Button)({
 const CareerDetail = () => {
   return (
     <div>
-      <Header />
       <section>
         <div className="container">
           <div className="careerDetail_body">
@@ -100,6 +97,7 @@ const CareerDetail = () => {
                       label="Name"
                       id="custom-css-outlined-input"
                       fullWidth
+                      required
                       name="user_name"
                       type="name"
                       sx={{ bgcolor: "white" }}
@@ -136,6 +134,7 @@ const CareerDetail = () => {
                       label="Phone"
                       id="custom-css-outlined-input"
                       fullWidth
+                      required
                       type="number"
                       name="phone"
                       sx={{ bgcolor: "white" }}
@@ -153,6 +152,7 @@ const CareerDetail = () => {
                       label="Position"
                       id="custom-css-outlined-input"
                       fullWidth
+                      required
                       name="position"
                       type="text"
                       sx={{ bgcolor: "white" }}
@@ -171,6 +171,7 @@ const CareerDetail = () => {
                       fullWidth
                       name="file"
                       type="file"
+                      required
                       sx={{ bgcolor: "white" }}
                       InputProps={{
                         endAdornment: (
@@ -206,7 +207,6 @@ const CareerDetail = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import website from './../../images/website.jpg';
 import website1 from './../../images/website1.jpg';
 import website2 from './../../images/website2.jpg';
@@ -51,7 +49,6 @@ const projectData = [
 const Product = () => {
     return (
         <div>
-            <Header />
             <section>
             
             <div className='container'>
@@ -80,7 +77,6 @@ const Product = () => {
             </div>
            
         </section>
-            <Footer />
         </div>
     );
 };

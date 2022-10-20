@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import './../styles/Career.css';
 
 
@@ -30,7 +28,6 @@ const careerData = [
 const Career = () => {
     return (
         <div>
-        <Header />
         <section>
         
         <div className='container'>
@@ -57,7 +54,6 @@ const Career = () => {
         </div>
        
     </section>
-        <Footer />
     </div>
     );
 };

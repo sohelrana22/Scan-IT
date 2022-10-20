@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import Counter from '../pages/Counter';
 import Hero from '../pages/Hero';
 import Newsletter from '../pages/Newsletter';
@@ -11,14 +9,12 @@ import Testimonial from '../pages/Testimonial';
 const Home = () => {
     return (
         <div>
-            <Header />
             <Hero />
             <Counter />
             <Service />
             <Team />
             <Testimonial />
             <Newsletter />
-            <Footer />
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import './../styles/Hero.css';
 import hero from './../../images/hero-img.png';
 import Rotate from 'react-reveal/Rotate';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -17,7 +18,7 @@ const Hero = () => {
                   </div>
                   <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ullam sed. Numquam eos similique repella.</p>
                   <div className='hero_btn'>
-                    <button className='primary_btn'>Get Started Now</button>
+                    <button className='primary_btn'><Link to='/product'>Get Started Now</Link></button>
                   </div>
                 </div>
                 </Rotate>

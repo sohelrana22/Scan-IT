@@ -1,0 +1,4 @@
+.card{
+    background: var(--team-card-bg);
+    border-radius: 5px;
+}

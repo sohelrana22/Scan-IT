@@ -1,8 +1,9 @@
 import React from 'react';
 import './../styles/About.css';
 import aboutImg from './../../images/about-us.jpg';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Counter from './Counter';
+import Team from './Team';
+import FAQ from './FAQ';
 
 const chooseData = [
     {
@@ -25,7 +26,6 @@ const chooseData = [
 const About = () => {
     return (
         <div>
-            <Header />
             <section id='about'>
             <div className='container'>
                 <div className='about_wrapper'>
@@ -54,7 +54,9 @@ const About = () => {
                 </div>
             </div>
         </section>
-        <Footer />
+        <Counter />
+        <Team />
+        <FAQ />
         </div>
     );
 };
