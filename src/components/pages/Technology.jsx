@@ -3,6 +3,8 @@ import './../styles/Technology.css';
 import javaScript from './../../images/javascript.png';
 import react from './../../images/react.png';
 import redux from './../../images/redux.png';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const technologyData = [
     {
@@ -28,6 +30,7 @@ const technologyData = [
 const Technology = () => {
     return (
        <div>
+        <Header />
          <section>
             
             <div className='container'>
@@ -56,6 +59,7 @@ const Technology = () => {
             </div>
            
         </section>
+        <Footer />
        </div>
     );
 };

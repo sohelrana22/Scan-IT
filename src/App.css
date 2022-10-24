@@ -33,28 +33,9 @@
   --font-name: "Roboto", sans-serif;
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg:#151e4f;
-}
-
-.light-theme {
-  --body-bg: rgb(255, 255, 255);
-  --heading-color: #0c123d;
-  --btn-secondary-bg: #816aff;
-  --btn-primary-bg: #fff;
-  --primary-color: #816aff;
-  --counter-color: #fff;
-  --counter-section-bg: #816aff;
-  --link-color: #0c123d;
-  --link-active: #816aff
-  --newsletter-bg: linear-gradient(
-    180deg,
-    rgba(189, 243, 255, 1) 29%,
-    rgba(193, 243, 255, 1) 50%,
-    rgba(226, 250, 255, 1) 78%
-  );
-  --small-text-color:#000;
-  --card-bg:#fff;
-  --testimonial-bg: #f7f7f7;
-  --team-card-bg: #fff;
+  --black: #09090c;
+  --grey: #a4b2bc;
+  --white: #fff;
 }
 
 *{

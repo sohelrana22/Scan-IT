@@ -12,8 +12,8 @@ const quickLinks1 = [
         display: 'Analytics'
     },
     {
-        path: '/faq',
-        display: 'FAQ'
+        path: '/experience',
+        display: 'Experience'
     },
 ]
 const quickLinks2 = [

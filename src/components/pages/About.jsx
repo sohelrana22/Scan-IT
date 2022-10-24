@@ -3,7 +3,8 @@ import './../styles/About.css';
 import aboutImg from './../../images/about-us.jpg';
 import Counter from './Counter';
 import Team from './Team';
-import FAQ from './FAQ';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const chooseData = [
     {
@@ -26,6 +27,7 @@ const chooseData = [
 const About = () => {
     return (
         <div>
+            <Header />
             <section id='about'>
             <div className='container'>
                 <div className='about_wrapper'>
@@ -56,7 +58,7 @@ const About = () => {
         </section>
         <Counter />
         <Team />
-        <FAQ />
+         <Footer />
         </div>
     );
 };

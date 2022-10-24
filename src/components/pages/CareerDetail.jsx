@@ -4,6 +4,8 @@ import { styled } from "@mui/material/styles";
 import { Grid, InputAdornment } from "@mui/material";
 import Button from "@mui/material/Button";
 import InputTextField from "./../StyledComponent/InputTextField/InputTextField";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const ContactButton = styled(Button)({
     '&': {
@@ -26,6 +28,7 @@ const ContactButton = styled(Button)({
 const CareerDetail = () => {
   return (
     <div>
+      <Header />
       <section>
         <div className="container">
           <div className="careerDetail_body">
@@ -207,6 +210,7 @@ const CareerDetail = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

@@ -7,6 +7,8 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import TimeLine from './TimeLine';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 
 const Accordion = styled((props) => (
@@ -55,6 +57,8 @@ const FAQ = () => {
   
     return (
         <div>
+          <Header />
+           <TimeLine />
             <section>
                 <div className='container'>
                     <h2 className='title'>Frequently Asked <span className='highlight'>Questions</span></h2>
@@ -126,7 +130,7 @@ const FAQ = () => {
     </div>
                 </div>
             </section>
-            <TimeLine />
+            <Footer />
         </div>
     );
 };
