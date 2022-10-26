@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import Swing from 'react-reveal/Swing';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import { Context } from '../../context/Context';
 
 const nav_links = [
     {
@@ -32,6 +33,11 @@ const nav_links = [
 ]
 
 const Header = () => {
+    const { user, dispatch } = useContext(Context)
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" })
+      }
+
     const headerRef = useRef(null)
     const headerFun = () => {
         if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -68,7 +74,10 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className='menu_item'>
-                        <Link to='/login' className='menu_link'>Login</Link>
+                        <Link to='/login' className='menu_link auth'>Login</Link>
+                          <button className='primary_btn' onClick={handleLogout}> 
+                        Log Out
+                        </button>
                     </div>
                 </div>
                 </Swing>
