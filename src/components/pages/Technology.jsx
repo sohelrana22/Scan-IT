@@ -1,37 +1,28 @@
-import React from 'react';
+import React,{ useState, useEffect } from 'react';
 import './../styles/Technology.css';
-import javaScript from './../../images/javascript.png';
-import react from './../../images/react.png';
-import redux from './../../images/redux.png';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
-const technologyData = [
-    {
-        imgUrl: javaScript,
-        title: 'JavaScript',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-        linkUrl: '#'
-    },
-    {
-        imgUrl: react,
-        title: 'React',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-        linkUrl: '#'
-    },
-    {
-        imgUrl: redux,
-        title: 'Redux',
-        des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-        linkUrl: '#'
-    },
-]
+import axios from 'axios'
 
 const Technology = () => {
+    const [technology, setTechnology] = useState([]);
+    
+    useEffect(() => {
+        const getTechnology = async () => {
+            try {
+                const res = await axios.get('http://localhost:5000/api/technology')
+                setTechnology(res.data.data)
+            } catch (error) {
+                console.log(error)
+            }
+        };
+        getTechnology()
+    }, [])
     return (
        <div>
         <Header />
          <section>
+            
             
             <div className='container'>
                 <div className='technology_top-content'>
@@ -42,13 +33,14 @@ const Technology = () => {
                 </div>
                 <div className='technology_wrapper'>
                    {
-                    technologyData.map((item, index) => (
+                    technology.map((item, index) => (
                         <div className='technology_item' key={index}>
                         <h3>{item.title}</h3>
                         <div className='technology_img'>
-                            <img src={item.imgUrl} alt="" />
+                            <img src={`http://localhost:5000/${item.photo}`} alt="" />
                         </div>
-                        <p className='description technology_desc'>{item.des}</p>
+                        <p className='description technology_desc'>{item.subtitle}</p>
+                        <p className='description technology_desc'>{item.desc}</p>
                         <div>
                             <a href={item.linkUrl} className='learn_more'><i class="ri-arrow-right-line"></i></a>
                         </div>

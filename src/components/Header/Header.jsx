@@ -15,8 +15,8 @@ const nav_links = [
         display: 'Technology Stack'
     },
     {
-        path: '/product',
-        display: 'Product'
+        path: '/products',
+        display: 'Products'
     },
     {
         path: '/contact',
@@ -39,6 +39,8 @@ const Header = () => {
       }
 
     const headerRef = useRef(null)
+    const menuRef = useRef(null)
+
     const headerFun = () => {
         if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             headerRef.current.classList.add('header_shrink')
@@ -51,6 +53,8 @@ const Header = () => {
         window.addEventListener('scroll', headerFun)
         return () => window.removeEventListener('scroll', headerFun)
     }, [])
+
+    const toggleMenu = () => menuRef.current.classList.toggle("menu_active");
     return (
         <header className='header' ref={headerRef}>
             <div className='container'>
@@ -60,7 +64,7 @@ const Header = () => {
                         <h2>Scan IT</h2>
                        
                     </div>
-                    <div className='navigation'>
+                    <div className='navigation' ref={menuRef} onClick={toggleMenu}>
                         <ul  className='menu'>
                             {
                                 nav_links.map((item, index) => (
@@ -79,6 +83,7 @@ const Header = () => {
                         Log Out
                         </button>
                     </div>
+                    <span className='mobile_menu' onClick={toggleMenu}><i class="ri-menu-line"></i></span>
                 </div>
                 </Swing>
             </div>

@@ -3,7 +3,6 @@
     margin-bottom: 100px;
 }
 .technology_item{
-    width: 30%;
     padding: 30px 25px;
     background: var(--card-bg);
     border-radius: 0.5rem;
@@ -31,7 +30,7 @@
     cursor: pointer;
 }
 .technology_wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
 }

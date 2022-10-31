@@ -1,13 +1,12 @@
 .hero_wrapper{
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 30px;
 }
 .hero_content{
     padding: 40px;
 }
-.hero_content, .hero_img{
-    width: 50%;
-}
+ 
 
 .hero_content h2{
     font-size: 3rem;
@@ -32,4 +31,27 @@
     background: var(--btn-primary-bg);
     border-radius: 0.4rem;
     cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+    .hero_content h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero_content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .hero_content p{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hero_content, .hero_img{
+        width: 100%;
+    }
+    .hero_wrapper{
+        flex-direction: column;
+    }
 }

@@ -1,11 +1,11 @@
 .counter_wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
 }
 .counter_item{
-    width: 33%;
     align-items: center;
+    justify-content: center;
 }
 .counter_number, .counter_title{
     background: var(--counter-color);

@@ -23,3 +23,23 @@
     justify-content: space-between;
     border-radius: 0.5rem;
 }
+@media only screen and (max-width: 992px){
+    .newsletter_content h2{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .newsletter_wrapper{
+        flex-wrap: wrap;
+    }
+    .newsletter_content, .newsletter_form{
+        width: 100%;
+    }
+    .newsletter_content{
+        margin-bottom: 20px;
+    }
+    .newsletter_form input{
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}

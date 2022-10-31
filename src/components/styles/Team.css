@@ -6,7 +6,6 @@
     margin-bottom: 30px;
 }
 .team_item{
-    width: 25%;
     background: var(--team-card-bg);
     border-radius: 5px;
 }
@@ -47,7 +46,7 @@
     cursor: pointer;
 }
 .team_wrapper{
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
 }

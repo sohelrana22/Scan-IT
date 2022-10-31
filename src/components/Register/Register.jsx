@@ -10,18 +10,20 @@ const Register = () => {
   const [password, setPassword] = useState("")
   const [email, setEmail] = useState("")
   const [mobile, setMobile] = useState("")
+  const [photo, setPhoto] = useState("")
   const [error, setError] = useState(false)
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault()
     setError(false)
+    const formData = new FormData()
+    formData.append('name', name)
+    formData.append('email', email)
+    formData.append('password', password)
+    formData.append('mobile', mobile)
+    formData.append('photo', photo)
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", {
-        name,
-        email,
-        password,
-        mobile
-      })
+      const res = await axios.post("http://localhost:5000/api/auth/register", formData)
       res.data && navigate("/login")
     } catch (error) {
       setError(true)
@@ -54,7 +56,7 @@ const Register = () => {
                     </div>
                     <div className='inputBox'>
                         <label htmlFor="">Image</label>
-                        <input  type="file"  placeholder='your image' />
+                        <input  type="file" onChange={(e) => setPhoto(e.target.files[0])} placeholder='your image' />
                     </div>
                     <div className='inputBox'>
                         <input type="submit" value={'Register'} />
